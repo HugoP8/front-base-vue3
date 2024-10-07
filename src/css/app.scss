@@ -1,0 +1,122 @@
+// app global css in SCSS form
+@import './font';
+@import './theme';
+@import './editor';
+
+body {
+  font-family: "Poppins", "-apple-system", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+// Layout
+.q-footer-main {
+  background-color: transparent;
+
+  .footer {
+    font-size: .9rem;
+    color: $grey-9;
+    text-align: right;
+  }
+}
+
+body.body--dark {
+  .q-dark {
+    color: #92929f;
+  }
+  .q-page {
+    background-color: $dark-page;
+  }
+  .q-footer-main {
+    .footer {
+      color: $grey-1;
+    }
+  }
+  .bg-info {
+    background-color: #292929 !important;
+    color: #8950fc;
+  }
+
+  .bg-primary {
+    color: #3699ff;
+    background-color: #212e48 !important;
+    &.q-btn {
+      background-color: var(--q-primary) !important;
+    }
+  }
+  .aside{
+    background-color: #212121;
+    }
+    .bg-menu{
+    color: #ffffff;
+    background-color: #cf4500;
+    }
+}
+
+// light
+.aside{
+background-color: #262626;
+}
+.bg-menu{
+color: #cf4500;
+background-color: #fafafa;
+}
+.bg-info {
+  background-color: #6b6b6b !important;
+  color: #ffffff;
+  }
+
+// etiqueta test
+.ribbon-wrapper-yellow {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  z-index: 11111;
+}
+
+.ribbon-yellow {
+  font: bold 20px Sans-Serif;
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+  transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -10px;
+  top: 32px;
+  width: 180px;
+  background-color: #dfbb1c;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.ribbon-yellow:before, .ribbon-yellow:after {
+  content: "";
+  border-top:   3px solid #6e8900;
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+.ribbon-yellow:before {
+  left: 0;
+}
+.ribbon-yellow:after {
+  right: 0;
+}
+
+.mensaje--nodata{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px !important;
+  color: #5e718d90;
+}
